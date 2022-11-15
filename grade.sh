@@ -14,7 +14,8 @@ if [[ -e ListExamples.java ]]
 then
   javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java 2> error.txt
   java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples > output.txt
-  echo error.txt output.txt
+  echo error.txt
+  echo output.txt
 else
   echo "wrong file"
   exit 1
