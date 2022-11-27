@@ -5,8 +5,6 @@ import java.nio.file.DirectoryStream.Filter;
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecker { boolean checkString(String s); }
-
 class LengthChecker implements StringChecker
 {
   public boolean checkString(String s)
